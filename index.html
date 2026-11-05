@@ -9,9 +9,13 @@
 <meta name="author" content="Kamal Negida">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://kamal-negida-portfolio.github.io/">
+<link rel="alternate" hreflang="en" href="https://kamal-negida-portfolio.github.io/">
+<link rel="alternate" hreflang="ar" href="https://kamal-negida-portfolio.github.io/ar/">
+<link rel="alternate" hreflang="x-default" href="https://kamal-negida-portfolio.github.io/">
 <meta property="og:type" content="profile">
 <meta property="og:site_name" content="Kamal Negida">
 <meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_EG">
 <meta property="og:url" content="https://kamal-negida-portfolio.github.io/">
 <meta property="og:title" content="Kamal Negida | Performance Media Buyer – Egypt & MENA">
 <meta property="og:description" content="Meta, TikTok, Snapchat & Google Ads for real estate, clinics, e-commerce and B2B brands in Egypt and the MENA region. Case studies with verified Ads Manager results.">
@@ -433,6 +437,12 @@ footer{padding-block:28px;border-top:1px solid color-mix(in srgb,var(--bg) 18%,v
 .contact .btn-ghost{color:var(--ink);border-color:var(--line)}
 .contact .btn-ghost:hover{border-color:var(--accent)}
 .contact footer{border-color:var(--line);color:var(--muted)}
+
+/* language switch */
+.nav-end{display:flex;align-items:center;gap:14px}
+.lang-switch{font-size:.85rem;font-weight:600;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:7px 12px}
+.lang-switch:hover{color:var(--ink);border-color:var(--ink)}
+footer a{color:var(--accent)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -453,7 +463,10 @@ footer{padding-block:28px;border-top:1px solid color-mix(in srgb,var(--bg) 18%,v
       <a href="#approach">Approach</a>
       <a href="#experience">Experience</a>
     </nav>
-    <a class="btn btn-primary" href="#contact">Contact</a>
+    <div class="nav-end">
+      <a class="lang-switch" href="ar/" hreflang="ar" lang="ar">العربية</a>
+      <a class="btn btn-primary" href="#contact">Contact</a>
+    </div>
   </div>
 </header>
 
@@ -1097,7 +1110,7 @@ footer{padding-block:28px;border-top:1px solid color-mix(in srgb,var(--bg) 18%,v
       <footer>
         <span>&copy; 2026 Kamal Negida &middot; Performance Media Buyer</span>
         <span>Campaign figures from Meta Ads Manager. Client names and logos belong to their owners.</span>
-        <span lang="ar" dir="rtl">كمال نجيدة – ميديا باير متخصص في إعلانات ميتا (فيسبوك وإنستجرام) وتيك توك وسناب شات وجوجل، لشركات العقارات والعيادات والمتاجر الإلكترونية في مصر والسعودية والإمارات.</span>
+        <span lang="ar" dir="rtl"><a href="ar/" hreflang="ar">النسخة العربية</a> · كمال نجيدة – ميديا باير متخصص في إعلانات ميتا (فيسبوك وإنستجرام) وتيك توك وسناب شات وجوجل، لشركات العقارات والعيادات والمتاجر الإلكترونية في مصر والسعودية والإمارات.</span>
       </footer>
     </div>
   </section>
