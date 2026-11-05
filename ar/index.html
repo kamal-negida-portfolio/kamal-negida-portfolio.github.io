@@ -487,6 +487,15 @@ html[lang="ar"] .about-text p:first-child{line-height:1.6}
 .lang-switch{font-size:.85rem;font-weight:600;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:7px 12px;font-family:"Instrument Sans",system-ui,sans-serif}
 .lang-switch:hover{color:var(--ink);border-color:var(--ink)}
 footer a{color:var(--accent)}
+
+/* services block */
+.svc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.svc-card{display:flex;flex-direction:column;gap:6px;padding:24px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);text-decoration:none;transition:border-color .2s,transform .2s}
+.svc-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.svc-card h3{font-size:1.2rem;font-weight:750}
+.svc-card p{color:var(--muted);font-size:.93rem}
+.svc-card .go{color:var(--accent);font-weight:600;font-size:.9rem;margin-top:6px}
+@media (max-width:820px){.svc-grid{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://kamal-negida-portfolio.github.io/#kamal", "name": "كمال نجيدة", "alternateName": ["Kamal Negida"], "jobTitle": "ميديا باير (Performance Media Buyer)", "description": "ميديا باير متخصص في إدارة إعلانات ميتا وتيك توك وسناب شات وجوجل للعقارات والعيادات والمتاجر الإلكترونية وشركات B2B في مصر والشرق الأوسط.", "url": "https://kamal-negida-portfolio.github.io/ar/", "image": "https://kamal-negida-portfolio.github.io/ar/og-image-ar.png", "email": "mailto:negida157@gmail.com", "telephone": "+201011379089", "address": {"@type": "PostalAddress", "addressRegion": "الشرقية", "addressCountry": "EG"}, "alumniOf": {"@type": "CollegeOrUniversity", "name": "جامعة الأزهر"}, "worksFor":[{"@type":"Organization","name":"La Maison Real Estate","address":{"@type":"PostalAddress","addressCountry":"AE"}},{"@type":"Organization","name":"Constant Growth Tech","address":{"@type":"PostalAddress","addressCountry":"SA"}}], "knowsLanguage": ["ar", "en"], "knowsAbout": ["ميديا باينج", "ميديا باير", "إعلانات فيسبوك", "إعلانات إنستجرام", "إعلانات ميتا", "إعلانات تيك توك", "إعلانات سناب شات", "إعلانات جوجل", "توليد الليدز", "التسويق العقاري", "التسويق الطبي", "إعلانات المتاجر الإلكترونية"], "sameAs": ["https://www.linkedin.com/in/kamalnegida"]}, {"@type": "ProfessionalService", "name": "كمال نجيدة – خدمات ميديا باينج وإدارة الإعلانات الممولة", "url": "https://kamal-negida-portfolio.github.io/ar/", "image": "https://kamal-negida-portfolio.github.io/ar/og-image-ar.png", "provider": {"@id": "https://kamal-negida-portfolio.github.io/#kamal"}, "telephone": "+201011379089", "priceRange": "$$", "address": {"@type": "PostalAddress", "addressRegion": "الشرقية", "addressCountry": "EG"}, "areaServed": [{"@type": "Country", "name": "مصر"}, {"@type": "Country", "name": "السعودية"}, {"@type": "Country", "name": "الإمارات"}], "serviceType": ["إدارة إعلانات فيسبوك وإنستجرام", "إدارة إعلانات تيك توك", "إدارة إعلانات سناب شات", "إدارة إعلانات جوجل", "حملات توليد الليدز"]}, {"@type": "WebPage", "name": "كمال نجيدة | ميديا باير", "url": "https://kamal-negida-portfolio.github.io/ar/", "inLanguage": "ar", "isPartOf": {"@type": "WebSite", "name": "Kamal Negida", "url": "https://kamal-negida-portfolio.github.io/"}}]}
@@ -498,6 +507,7 @@ footer a{color:var(--accent)}
   <div class="wrap nav-inner">
     <a class="brand" href="#top" aria-label="كمال نجيدة، العودة لأعلى الصفحة"><span class="brand-mark">KN</span>كمال نجيدة</a>
     <nav class="nav-links" aria-label="أقسام الصفحة">
+      <a href="#services">الخدمات</a>
       <a href="#work">دراسات الحالة</a>
       <a href="#about">من أنا</a>
       <a href="#approach">طريقة العمل</a>
@@ -605,6 +615,23 @@ footer a{color:var(--accent)}
     </div></div>
   </div>
 </div>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="label">الخدمات</span>
+        <h2>ماذا يمكنني أن أدير لك.</h2>
+      </div>
+      <p>ثلاثة مجالات حققت فيها أكبر النتائج. كل صفحة تشرح المنهجية والأرقام والأسئلة الشائعة.</p>
+    </div>
+    <div class="svc-grid">
+      <a class="svc-card" href="real-estate-media-buyer/"><span class="label">العقارات</span><h3>ميديا باير عقارات</h3><p>حملات ليدز على ميتا للمطورين وشركات الوساطة في الإمارات والسعودية ومصر. 1,603 ليد مشترين فلل بتكلفة 46.47 درهم.</p><span class="go">تفاصيل الخدمة &larr;</span></a>
+      <a class="svc-card" href="clinic-media-buyer/"><span class="label">العيادات</span><h3>ميديا باير عيادات</h3><p>حملات رسائل تجيب استفسارات وحجوزات مرضى. 34,996 محادثة لعيادة واحدة.</p><span class="go">تفاصيل الخدمة &larr;</span></a>
+      <a class="svc-card" href="ecommerce-media-buyer/"><span class="label">المتاجر الإلكترونية</span><h3>ميديا باير متاجر إلكترونية</h3><p>حملات مبيعات مبنية على العائد ثم التوسع. عائد <bdi dir="ltr">22.51&times;</bdi> خلال 13 يومًا، و1.16 مليون ج.م عبر 86 إعلان.</p><span class="go">تفاصيل الخدمة &larr;</span></a>
+    </div>
+  </div>
+</section>
 
 <!-- ============ CASE STUDIES ============ -->
 <section class="section" id="work">
@@ -1149,6 +1176,7 @@ footer a{color:var(--accent)}
     <div class="wrap">
       <footer>
         <span>&copy; 2026 كمال نجيدة &middot; ميديا باير</span>
+        <span><a href="real-estate-media-buyer/">ميديا باير عقارات</a> &middot; <a href="clinic-media-buyer/">ميديا باير عيادات</a> &middot; <a href="ecommerce-media-buyer/">ميديا باير متاجر إلكترونية</a></span>
         <span>أرقام الحملات من Meta Ads Manager. أسماء العملاء وشعاراتهم ملك لأصحابها.</span>
         <span><a href="../" hreflang="en" lang="en">English version</a></span>
       </footer>
@@ -1329,7 +1357,7 @@ addEventListener('scroll', onScroll, { passive:true }); onScroll();
     const secObs = new IntersectionObserver(es => es.forEach(e => {
       if (e.isIntersecting) links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
     }), { rootMargin:'-45% 0px -50% 0px' });
-    ['work','about','approach','experience'].forEach(id => { const s = document.getElementById(id); if (s) secObs.observe(s); });
+    ['services','work','about','approach','experience'].forEach(id => { const s = document.getElementById(id); if (s) secObs.observe(s); });
   }
   if (reduce || !('IntersectionObserver' in window)) return;
   root.classList.add('motion');
